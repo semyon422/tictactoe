@@ -1,0 +1,9 @@
+#!/bin/bash
+rm ../game.love
+rm ../game-win64.zip
+zip -r ../game.love *
+cat ../love-11.4-win64/love.exe ../game.love > ../game-win64/game.exe
+cp ../game.love ../game-win64/game.love
+cd ..
+zip -r game-win64.zip game-win64
+cd game
